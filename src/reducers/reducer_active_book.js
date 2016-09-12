@@ -8,7 +8,7 @@ export default function(state = null, action) {
 	// case when you do care about the action
 	switch(action.type) {
 	// this action payload is the selected book
-		case 'BOOK+SELECTED':
+		case 'BOOK_SELECTED':
 		return action.payload;
 	}	
 
