@@ -10,12 +10,10 @@ class BookList extends Component {
 			// for each book in array...
 			return (
 				// add click event handler
-				<li
-				onClick={() => this.props.selectBook(book)} 
-				key={book.title} className="list-group-item">
+				<li key={book.title} onClick={ () => this.props.selectBook(book)} className="list-group-item">
 				{book.title}</li>
-				)
-		})
+				);
+		});
 	}
 
 
